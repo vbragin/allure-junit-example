@@ -33,7 +33,7 @@ public class ParameterizedTest {
 
     @Test
     public void testMultiplication() {
-        assertThat((long) first * second, equalTo(result));
+        assertThat((long) first - second, equalTo(result));
     }
 
 }
