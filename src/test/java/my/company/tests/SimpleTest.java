@@ -21,9 +21,11 @@ import static org.junit.Assert.fail;
  */
 public class SimpleTest {
 
+    private static int counter = 0;
+
     @Test
     public void simpleTest() throws Exception {
-        if (new Random().nextBoolean()) {
+        if (counter++ < 3) {
             throw new RuntimeException("Hello!");
         }
         assertThat(2, is(2));
