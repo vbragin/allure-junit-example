@@ -4,6 +4,7 @@ import io.github.bonigarcia.wdm.ChromeDriverManager;
 import io.qameta.allure.Issue;
 import my.company.steps.WebDriverSteps;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -22,6 +23,7 @@ public class SearchTest {
     }
 
     @Test
+    @Ignore
     @Issue("ISSUE-1")
     public void searchTest() throws Exception {
         steps.openMainPage();
