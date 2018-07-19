@@ -1,5 +1,6 @@
 package my.company.tests;
 
+import org.apache.commons.lang3.RandomUtils;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
@@ -33,7 +34,7 @@ public class ParameterizedTest {
 
     @Test
     public void testMultiplication() {
-        assertThat((long) first - second, equalTo(result));
+        assertThat((long) first * second, equalTo(result));
     }
 
 }
