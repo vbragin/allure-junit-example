@@ -1,5 +1,6 @@
 package my.company.tests;
 
+import io.qameta.allure.Issue;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
@@ -32,6 +33,7 @@ public class ParameterizedTest {
     }
 
     @Test
+    @Issue("AR-4")
     public void testMultiplication() {
         assertThat((long) first * second, equalTo(result));
     }

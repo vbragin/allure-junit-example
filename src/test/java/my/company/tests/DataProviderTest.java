@@ -3,6 +3,7 @@ package my.company.tests;
 import com.tngtech.java.junit.dataprovider.DataProvider;
 import com.tngtech.java.junit.dataprovider.DataProviderRunner;
 import com.tngtech.java.junit.dataprovider.UseDataProvider;
+import io.qameta.allure.Issue;
 import io.qameta.allure.junit4.DisplayName;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -26,6 +27,7 @@ public class DataProviderTest {
     }
 
     @Test
+    @Issue("AR-5")
     @UseDataProvider("dataProviderAdd")
     public void testAdd(int first, int second, long result) {
         assertEquals(first + second, result);
