@@ -2,6 +2,7 @@ package my.company.tests;
 
 import io.github.bonigarcia.wdm.ChromeDriverManager;
 import io.qameta.allure.Issue;
+import io.qameta.allure.TmsLink;
 import my.company.steps.WebDriverSteps;
 import org.junit.Before;
 import org.junit.Test;
@@ -22,7 +23,7 @@ public class SearchTest {
     }
 
     @Test
-    @Issue("ISSUE-1")
+    @TmsLink("TC-1")
     public void searchTest() throws Exception {
         steps.openMainPage();
         steps.search("Allure framework");

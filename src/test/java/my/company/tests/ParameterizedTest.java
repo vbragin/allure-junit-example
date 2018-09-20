@@ -1,5 +1,6 @@
 package my.company.tests;
 
+import io.qameta.allure.TmsLink;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
@@ -32,6 +33,7 @@ public class ParameterizedTest {
     }
 
     @Test
+    @TmsLink("TC-2")
     public void testMultiplication() {
         assertThat((long) first * second, equalTo(result));
     }
