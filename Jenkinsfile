@@ -3,7 +3,10 @@ pipeline {
     stages {
         stage("Build") {
             steps {
-                sh './mvnw -Dmaven.test.failure.ignore=true clean verify'
+                withAllureUpload(serverId: 'localhost', projectId: 1, results: [[path: 'target/allure-results']]) {
+                                sh './mvnw -Dmaven.test.failure.ignore=true clean verify'
+                }
+
             }
         }
         stage("Reports") {
