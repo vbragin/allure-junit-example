@@ -22,7 +22,7 @@ public class SearchTest {
     }
 
     @Test
-    @Issue("ISSUE-1")
+    @Issue("TES-2")
     public void searchTest() throws Exception {
         steps.openMainPage();
         steps.search("Allure framework");
