@@ -49,6 +49,12 @@
             <version>1.13.1</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-ee-junit-platform</artifactId>
+            <version>3.28.2</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
     <build>
